@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caesar Cipher</title>
+    <title>Affine Cipher</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Css/Caesar.css">
+    <link rel="stylesheet" href="Affine.css">
 </head>
 <body>
 
-<a href="../index.html" class="back-button">Quay lại</a>
+<a href="index.html" class="back-button">Quay lại</a>
+
 <div class="container mt-5">
     <div class="card shadow-lg p-4 rounded">
-        <h1 class="display-4 text-center mb-4 text-primary">Caesar Cipher</h1>
+        <h1 class="display-4 text-center mb-4 text-primary">Affine Cipher</h1>
 
         <div class="form-group">
             <label for="plainText">Nhập bản rõ:</label>
@@ -20,8 +21,13 @@
         </div>
 
         <div class="form-group">
-            <label for="shift">Số lần dịch vòng:</label>
-            <input type="number" id="shift" class="form-control" value="0">
+            <label for="a">Hệ số a:</label>
+            <input type="number" id="a" class="form-control" value="1">
+        </div>
+
+        <div class="form-group">
+            <label for="b">Hệ số b:</label>
+            <input type="number" id="b" class="form-control" value="0">
         </div>
 
         <div class="form-group">
@@ -47,10 +53,9 @@
         <textarea style="height: 50px;" id="result" class="form-control" rows="5" readonly></textarea>
     </div>
 </div>
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="../js/Caesar.js"></script>
+<script src="Affine.js"></script>
 </body>
 </html>
